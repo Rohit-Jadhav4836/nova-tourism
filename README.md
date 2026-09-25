@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# NOVA Tourism & Events
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Pune's trusted travel partner** — School Trips, Corporate Tours, Honeymoon Packages, Adventure Tours & Events, all in one place.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Bundler-Vite-646CFF?logo=vite&logoColor=white)
+![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Live Site:** [novatourism.in](https://novatourism.in)
 
-## Expanding the ESLint configuration
+## ✨ Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 About the Project
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+NOVA Tourism & Events is a full travel & events booking website built to showcase and manage:
+- 🏫 School & College Trips
+- 🏢 Corporate Tours & Offsites
+- 💑 Honeymoon Packages
+- ⛰️ Adventure Tours
+- 🎉 Event Planning & Management
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Built end-to-end and shipped live for real customers.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React + TypeScript + Vite
+- **Styling:** *(fill in — Tailwind / CSS Modules / etc.)*
+- **Deployment:** Vercel
+
+## 📦 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/Rohit-Jadhav4836/nova-tourism.git
+cd nova-tourism
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+nova-tourism/
+├── public/         # Static assets
+├── src/            # App source code
+├── itineraries/    # Tour/trip data
+├── index.html
+├── vite.config.ts
+└── package.json
 ```
